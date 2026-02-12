@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumanth Padala | Aspiring Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Outfit:wght@300;500;700;900&display=swap');
+
+        :root {
+            --primary: #6366f1;
+            --accent: #2dd4bf;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 { font-family: 'Outfit', sans-serif; }
+
+        .premium-glass {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            border-radius: 40px;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .premium-glass:hover {
+            border-color: var(--primary);
+            box-shadow: 0 25px 50px -12px rgba(99, 102, 241, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .profile-container-ultra {
+            position: relative;
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            padding: 10px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid #020617;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin-bottom: 2.5rem;
+            background: linear-gradient(to bottom right, #fff 50%, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .aurora {
+            position: fixed;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(120px);
+            border-radius: 50%;
+        }
+
+        .nav-link {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #94a3b8;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover { color: var(--primary); }
+
+        .skill-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 35px 20px;
+            border-radius: 30px;
+            text-align: center;
+            transition: 0.4s;
+        }
+
+        .skill-box:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--primary);
+        }
+
+        .social-icon {
+            font-size: 1.8rem;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="selection:bg-indigo-500 selection:text-white">
+
+    <div class="aurora top-[-10%] left-[-10%]"></div>
+    <div class="aurora bottom-[-10%] right-[-10%] bg-teal-500/10"></div>
+
+    <nav class="fixed top-0 w-full z-50 px-12 py-10 flex justify-end items-center">
+        <div class="hidden md:flex gap-12">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#skills" class="nav-link">Stack</a>
+            <a href="#experience" class="nav-link">History</a>
+            <a href="#projects" class="nav-link">Work</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#contact" class="nav-link">Connect</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6">
+        
+        <section id="home" class="min-h-screen flex flex-col justify-center py-20" data-aos="fade-up">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-indigo-400 font-bold tracking-[8px] uppercase text-sm mb-6">Aspiring Software Developer</h2>
+                    <h1 class="text-6xl lg:text-8xl font-black mb-10 leading-[0.85]">
+                        SUMANTH <br/> <span class="text-gradient">PADALA</span>
+                    </h1>
+                    <div class="premium-glass p-8 border-l-4 border-l-indigo-500 mb-12">
+                        <p class="text-xl text-slate-300 font-light leading-relaxed">
+                            To pursue a challenging career and be part of a progressive organization that provides opportunities to enhance my knowledge and apply my skills for the growth of the organization.
+                        </p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="mailto:sumanthpadala4@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/sumanth-padala-64965434b" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Sumanthpadala" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="profile-container-ultra">
+                        <img src="my_profile.jpeg" alt="Sumanth Padala" class="profile-img shadow-2xl">
+                        <div class="absolute -bottom-6 -left-6 px-10 py-6 premium-glass bg-indigo-600/20 border-indigo-500/30">
+                            <span class="text-5xl font-black italic">9.2</span>
+                            <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">B.Tech CGPA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24" data-aos="fade-left">
+            <h2 class="section-title">Technical <span class="text-gradient">Arsenal</span></h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="skill-box"><i class="fab fa-python text-6xl text-[#3776AB] mb-6"></i><div class="text-lg font-bold">Python</div></div>
+                <div class="skill-box"><i class="fab fa-java text-6xl text-[#ED8B00] mb-6"></i><div class="text-lg font-bold">Java</div></div>
+                <div class="skill-box"><i class="fas fa-database text-6xl text-[#4479A1] mb-6"></i><div class="text-lg font-bold">MySQL</div></div>
+                <div class="skill-box"><i class="fas fa-leaf text-6xl text-[#47A248] mb-6"></i><div class="text-lg font-bold">MongoDB</div></div>
+                <div class="skill-box"><i class="fab fa-html5 text-6xl text-[#E34F26] mb-6"></i><div class="text-lg font-bold">HTML5</div></div>
+                <div class="skill-box"><i class="fab fa-css3-alt text-6xl text-[#1572B6] mb-6"></i><div class="text-lg font-bold">CSS3</div></div>
+                <div class="skill-box"><i class="fab fa-js text-6xl text-[#F7DF1E] mb-6"></i><div class="text-lg font-bold">JavaScript</div></div>
+                <div class="skill-box">
+                    <div class="flex justify-center gap-4 mb-6">
+                        <i class="fab fa-git-alt text-4xl text-[#F05032]"></i>
+                        <i class="fas fa-code text-4xl text-[#007ACC]"></i>
+                    </div>
+                    <div class="text-lg font-bold">Git / VS Code</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24" data-aos="fade-right">
+            <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+            <div class="premium-glass p-12 lg:p-20">
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <div>
+                        <span class="text-indigo-400 font-bold uppercase text-xs tracking-widest mb-4 block">Internship</span>
+                        <h3 class="text-4xl font-bold mb-4">Frontend Development Intern</h3>
+                        <p class="text-xl font-semibold text-slate-400 mb-8 italic">Codsoft | June 2025 – July 2025</p>
+                        <div class="h-1 w-20 bg-indigo-500 rounded-full"></div>
+                    </div>
+                    <div>
+                        <ul class="text-xl text-slate-300 space-y-8 leading-relaxed">
+                            <li class="flex gap-5"><i class="fas fa-chevron-right text-indigo-500 mt-2"></i> Designed and developed responsive UI components using HTML and CSS.</li>
+                            <li class="flex gap-5"><i class="fas fa-chevron-right text-indigo-500 mt-2"></i> Collaborated with the team to enhance front-end design and functionality.</li>
+                            <li class="flex gap-5"><i class="fas fa-chevron-right text-indigo-500 mt-2"></i> Improved user experience by optimizing layouts and cross-browser compatibility.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24" data-aos="fade-left">
+            <h2 class="section-title">Selected <span class="text-gradient">Works</span></h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="premium-glass p-12 group">
+                    <div class="text-indigo-400 mb-8"><i class="fas fa-desktop text-4xl"></i></div>
+                    <h3 class="text-3xl font-bold mb-4">Online Quiz Web Application</h3>
+                    <p class="text-xl text-slate-400 mb-10">Developed a responsive quiz application with real-time score calculation and client-server interaction.</p>
+                    <a href="https://sumanthpadala.github.io/simpleQuiz/" target="_blank" class="text-indigo-400 font-bold text-lg group-hover:translate-x-2 transition-transform inline-block">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                <div class="premium-glass p-12 group">
+                    <div class="text-teal-400 mb-8"><i class="fab fa-google text-4xl"></i></div>
+                    <h3 class="text-3xl font-bold mb-4">Google Clone</h3>
+                    <p class="text-xl text-slate-400 mb-10">Replicated core search functionalities with real-time results display using DOM manipulation and API integration.</p>
+                    <a href="https://sumanthpadala.github.io/clone/" target="_blank" class="text-teal-400 font-bold text-lg group-hover:translate-x-2 transition-transform inline-block">View Project <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="py-24" data-aos="fade-right">
+            <h2 class="section-title">Recognition & <span class="text-gradient">Milestones</span></h2>
+            <div class="premium-glass bg-gradient-to-br from-indigo-900/20 to-slate-900/20 p-10 lg:p-14 text-center">
+                <div class="mb-6 flex justify-center gap-6">
+                    <i class="fas fa-trophy text-4xl text-yellow-500"></i>
+                    <i class="fas fa-code text-4xl text-indigo-400"></i>
+                </div>
+                <h2 class="text-3xl lg:text-5xl font-black mb-6">IEEE Coding Winner</h2>
+                <div class="text-lg lg:text-xl text-slate-300 mb-8 max-w-2xl mx-auto space-y-2 leading-relaxed">
+                    <p>Secured 1st prize in the Online Coding Competition held by IEEE organization at NBKRIST.</p>
+                    <p>Actively solving 100+ coding challenges on LeetCode.</p>
+                </div>
+                <div class="flex justify-center gap-3 flex-wrap">
+                    <span class="px-6 py-2 premium-glass text-indigo-300 font-bold uppercase text-[10px] tracking-widest">Problem Solving</span>
+                    <span class="px-6 py-2 premium-glass text-indigo-300 font-bold uppercase text-[10px] tracking-widest">Competitive Coding</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 text-center" data-aos="zoom-in">
+            <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+            <div class="flex flex-col gap-10 items-center">
+                <a href="mailto:sumanthpadala4@gmail.com" class="premium-glass px-12 py-8 text-2xl md:text-4xl font-black hover:bg-white hover:text-black transition-all duration-500">
+                    sumanthpadala4@gmail.com
+                </a>
+                <div class="flex gap-12">
+                    <a href="https://linkedin.com/in/sumanth-padala-64965434b" class="text-5xl text-slate-600 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Sumanthpadala" class="text-5xl text-slate-600 hover:text-white transition"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-16 text-center border-t border-white/5">
+        <p class="text-slate-600 text-sm font-bold uppercase tracking-[10px]">&copy; 2026 SUMANTH PADALA</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+</body>
+</html>
